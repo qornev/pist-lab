@@ -8,7 +8,12 @@ namespace webapp.Controllers;
 [Route("api/[controller]")]
 public class PlaceController : ControllerBase
 {
-    private static IStorage<Place> _memCache = new MemCache();
+    private IStorage<Place> _memCache = new MemCache();
+
+    public PlaceController(IStorage<Place> memCache)
+    {
+        _memCache = memCache;
+    }
 
     [HttpGet]
     public ActionResult<IEnumerable<Place>> Get()
