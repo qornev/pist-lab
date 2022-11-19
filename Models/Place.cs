@@ -2,7 +2,7 @@ namespace webapp.Models;
 
 public class Place
 {
-    public Guid Id { get; set; } = Guid.NewGuid();
+    public Guid Id { get; set; } = Guid.Empty;
     public string? Name { get; set; }
     public string? Category { get; set; }
     public float Latitude { get; set; }
