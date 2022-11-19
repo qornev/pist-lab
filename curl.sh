@@ -1,0 +1,5 @@
+curl http://localhost:5026/api/place -X POST --header 'Content-Type: application/json' -d '{"Name":"Novosibirsk Zoo","Category":"Zoo","Latitude":55.0570,"Longitude":82.8890}'
+curl http://localhost:5026/api/place -X POST --header 'Content-Type: application/json' -d '{"Name":"RAN Library","Category":"Library","Latitude":55.0172,"Longitude":82.9470}'
+curl http://localhost:5026/api/place -X POST --header 'Content-Type: application/json' -d '{"Name":"Novosibirsk State Technical University","Category":"University","Latitude":54.9877,"Longitude":82.9064}'
+curl http://localhost:5026/api/place -X POST --header 'Content-Type: application/json' -d '{"Name":"Opera and Ballet theatre","Category":"Theatre","Latitude":55.0304,"Longitude":82.9247}'
+curl http://localhost:5026/api/place -X POST --header 'Content-Type: application/json' -d '{"Name":"Pobeda","Category":"Cinema","Latitude":55.0292,"Longitude":82.9147}'
